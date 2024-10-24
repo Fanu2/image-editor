@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Editor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Image Editor</h1>
+    <input type="file" id="inputImage" accept="image/*">
+    <canvas id="canvas" width="800" height="600"></canvas>
+    <div class="controls">
+        <button id="btnRotateClockwise">Rotate Clockwise</button>
+        <button id="btnRotateCounterClockwise">Rotate Counter-Clockwise</button>
+        <input id="inputRotationRange" type="range" min="0" max="360" step="1" value="0">
+        <button id="btnDownload">Download Image</button>
+
+        <input id="inputWidth" type="number" placeholder="Width">
+        <input id="inputHeight" type="number" placeholder="Height">
+        <button id="btnResize">Resize</button>
+
+        <select id="filterSelect">
+            <option value="none">None</option>
+            <option value="grayscale">Grayscale</option>
+            <option value="sepia">Sepia</option>
+            <option value="invert">Invert Colors</option>
+        </select>
+
+        <button id="btnFlipHorizontal">Flip Horizontal</button>
+        <button id="btnFlipVertical">Flip Vertical</button>
+
+        <input type="text" id="textOverlay" placeholder="Add text overlay">
+        <button id="btnAddText">Add Text</button>
+
+        <button id="btnUndo">Undo</button>
+        <button id="btnRedo">Redo</button>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
