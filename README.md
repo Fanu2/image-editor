@@ -15,7 +15,7 @@ A simple yet powerful web-based image editor built with HTML, CSS, and JavaScrip
 
 ## Demo
 
-[Live Demo]([https://your-live-demo-url.com](https://image-editor-sepia.vercel.app/)) (If applicable)
+[Live Demo] https://image-editor-sepia.vercel.app (If applicable)
 
 ## Technologies Used
 
